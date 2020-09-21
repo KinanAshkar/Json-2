@@ -1,0 +1,22 @@
+<!-- Practice On Converting Objects And Data -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <div id="data">
+        <div id="name"></div>
+        <div id="age"></div>
+    </div>
+    <script>
+        let myJson = '{ "username": "kinan", "age": 36 }';
+        let myJs = JSON.parse(myJson);
+
+        document.getElementById("name").innerHTML = "My Name Is: " + myJs.username;
+        document.getElementById("age").innerHTML = "My Age Is: " + myJs.age;
+    </script>
+</body>
+</html>
